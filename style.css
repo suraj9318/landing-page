@@ -281,6 +281,9 @@ ul{
     .container{
         max-width: 768px;
     }
+    .md-text-left{
+        text-align: left;
+    }
 }
 
 /* for large screen lg (1024px) */
@@ -310,6 +313,9 @@ ul{
     }
     .lg-cols-3{
         grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+    .lg-cols-2{
+        grid-template-columns: repeat(2,minmax(0,1fr));
     }
 }
 
@@ -402,3 +408,51 @@ ul{
 }
 
 /* ------------------- /agency area Style ------------------------ */
+
+
+
+/* ------------------- digital life area Style ------------------------ */
+.life-area .grid {
+    column-gap: 10em;
+}
+
+.grid-images{
+    display: grid;
+    grid-template-columns: repeat(16, minmax(10px,1fr));
+    grid-template-rows: repeat(8, minmax(100px, 1fr));
+}
+
+.life-area .grid-images .image-one{
+    background: var(--text-gray);
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end:5 ;
+    background: var(--bg-image1) no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    filter: blur(1px);
+}
+.life-area .grid-images .image-two{
+    background: var(--text-gray);
+    grid-column-start: 9;
+    grid-column-end: 16;
+    grid-row-start: 1;
+    grid-row-end:4 ;
+    background: var(--bg-image2) no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    filter: blur(1px);
+}
+
+.life-area .grid-images .image-three{
+   grid-area: 3/4/8/14;
+   background: var(--bg-image3) no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    z-index: 999;
+}
+
+
+/* ------------------- digital life area Style ------------------------ */
+
