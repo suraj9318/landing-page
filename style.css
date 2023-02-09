@@ -412,45 +412,47 @@ ul{
 
 
 /* ------------------- digital life area Style ------------------------ */
-.life-area .grid {
+
+#site-main .life-area > .grid{
     column-gap: 10em;
 }
 
-.grid-images{
+#site-main .life-area .grid-images{
     display: grid;
-    grid-template-columns: repeat(16, minmax(10px,1fr));
+    grid-template-columns: repeat(16, minmax(10px, 1fr));
     grid-template-rows: repeat(8, minmax(100px, 1fr));
 }
 
-.life-area .grid-images .image-one{
+#site-main .life-area .grid-images .item-one{
     background: var(--text-gray);
     grid-column-start: 1;
     grid-column-end: 8;
     grid-row-start: 2;
-    grid-row-end:5 ;
+    grid-row-end: 5;
     background: var(--bg-image1) no-repeat;
     background-size: cover;
     border-radius: 8px;
     filter: blur(1px);
 }
-.life-area .grid-images .image-two{
+
+#site-main .life-area .grid-images .item-two{
     background: var(--text-gray);
     grid-column-start: 9;
     grid-column-end: 16;
     grid-row-start: 1;
-    grid-row-end:4 ;
+    grid-row-end: 4;
     background: var(--bg-image2) no-repeat;
     background-size: cover;
     border-radius: 8px;
     filter: blur(1px);
 }
 
-.life-area .grid-images .image-three{
-   grid-area: 3/4/8/14;
-   background: var(--bg-image3) no-repeat;
+#site-main .life-area .grid-images .item-three{
+    grid-area: 3 / 4 / 8 / 14;
+    background: var(--bg-image3) no-repeat;
     background-size: cover;
     border-radius: 8px;
-    z-index: 999;
+    z-index: 99;
 }
 
 
